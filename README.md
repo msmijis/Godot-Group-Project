@@ -1,1 +1,1 @@
-A game created by the games com[pany "GameWright", named after isaac wright
+A game created by the games com[pany "Ms Mijis", named after everyone ever 
