@@ -1,1 +1,1 @@
-A game created by the games com[pany "Ms Mijis", named after everyone ever 
+A game created by the games company "Ms Mijis", named after everyone ever 
