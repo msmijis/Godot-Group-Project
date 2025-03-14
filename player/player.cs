@@ -6,9 +6,6 @@ public partial class player : CharacterBody2D
 	[Export]
 	private int speed = 50;
 
-	// [Export]
-	// private AnimatedSprite2D _playerSprite;
-
 	private AnimatedSprite2D _playerSprite;
 	private Vector2 currentVelocity;
 	private String direction = "down";
@@ -29,8 +26,8 @@ public partial class player : CharacterBody2D
 	}
 
 	private void updateAnimation() {
-		if (currentVelocity.Length() == 0) {
-			_playerSprite.Stop();
+		if (currentVelocity.Length() == 0) { //if currentVelocity's magnitude is zero...
+			_playerSprite.Stop(); //first frame of walk animation only will show
 			return;
 		}
 
@@ -40,17 +37,17 @@ public partial class player : CharacterBody2D
 		else if (currentVelocity.Y < 0) new_direction = "up";
 		else if (currentVelocity.Y > 0) new_direction = "down";
 		
-		if (direction != new_direction) {
+		if (direction != new_direction) { //prevents frames from reseting
 			direction = new_direction;
-			_playerSprite.Animation = "walk_" + direction;
+			_playerSprite.Animation = "walk_" + direction; //resets frame count to 0 and changes animation to correct direction
 		}
 
 		_playerSprite.Play();
-		//_animPlayer.Stop();
 	}
 
 	private void handleInput() {
-		currentVelocity = Input.GetVector("move_left","move_right", "move_up", "move_down");
-		currentVelocity *= speed;
+		currentVelocity = Input.GetVector("move_left","move_right", "move_up", "move_down"); //sets unit vector determining movement direction
+		currentVelocity = currentVelocity.Normalized(); //avoids diagonal movement being faster
+		currentVelocity *= speed; //multiplies aforementioned unit vector for movement by speed constant
 	}
 }
