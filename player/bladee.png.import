@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do4w5s5mlngg3"
-path="res://.godot/imported/icedancer.webp-d1a9a3574f0b274142383b643013402a.ctex"
+uid="uid://1g7ibap2kpen"
+path="res://.godot/imported/bladee.png-495182c3dadc236f1f33e4c6bc726f2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icedancer.webp"
-dest_files=["res://.godot/imported/icedancer.webp-d1a9a3574f0b274142383b643013402a.ctex"]
+source_file="res://player/bladee.png"
+dest_files=["res://.godot/imported/bladee.png-495182c3dadc236f1f33e4c6bc726f2a.ctex"]
 
 [params]
 
