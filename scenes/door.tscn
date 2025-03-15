@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2460v3p17rfj"]
+
+[ext_resource type="Texture2D" uid="uid://lbgcu7pga3wb" path="res://sprites/door_closed.png" id="1_hpvv5"]
+[ext_resource type="Script" uid="uid://ds7tjhfq0wndm" path="res://scenes/Door.cs" id="1_uvdjg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hpvv5"]
+
+[node name="Door" type="Node2D"]
+script = ExtResource("1_uvdjg")
+
+[node name="GFX" type="Sprite2D" parent="."]
+texture = ExtResource("1_hpvv5")
+
+[node name="AccessRange" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AccessRange"]
+position = Vector2(0, 10)
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_hpvv5")
+
+[connection signal="body_entered" from="AccessRange" to="." method="_on_access_range_body_entered"]
+[connection signal="body_exited" from="AccessRange" to="." method="_on_access_range_body_exited"]

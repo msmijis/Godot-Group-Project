@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1g7ibap2kpen"
-path="res://.godot/imported/bladee.png-495182c3dadc236f1f33e4c6bc726f2a.ctex"
+uid="uid://4is0drkpeitx"
+path="res://.godot/imported/TX Props.png-eea129d8ed866e37c03c49743b11e10e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/bladee.png"
-dest_files=["res://.godot/imported/bladee.png-495182c3dadc236f1f33e4c6bc726f2a.ctex"]
+source_file="res://sprites/TX Props.png"
+dest_files=["res://.godot/imported/TX Props.png-eea129d8ed866e37c03c49743b11e10e.ctex"]
 
 [params]
 
