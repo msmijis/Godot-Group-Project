@@ -10,6 +10,7 @@ size = Vector2(20, 30)
 script = ExtResource("1_rkbax")
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("3_yw30f")]
+animation = &"walk_left"
 speed_scale = 2.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

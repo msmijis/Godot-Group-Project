@@ -5,6 +5,7 @@ public partial class Door : Node2D
 {
 	player player;
 	Node currentScene;
+	private AnimatedSprite2D _doorSprite;
 	
 	bool within_access_range = false;
 	
@@ -12,6 +13,7 @@ public partial class Door : Node2D
 		currentScene = GetTree().CurrentScene;
 		string sceneName = currentScene.Name;
 		player = (player)GetTree().Root.GetNode(sceneName).GetNode("Player");
+		_doorSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		
 		
 		// connect signals
@@ -36,11 +38,19 @@ public partial class Door : Node2D
 		}
 	}
 	
+	/*private void updateAnimation() {
+		if (within_access_range) {
+			_doorSprite.Animation = 
+		}
+	}*/
+	
 	public void OnAccessRangeBodyEnter(Node2D body) {
 		within_access_range = true;
+		_doorSprite.Animation = "door_open";
 	}
 	
 	public void OnAccessRangeBodyExit(Node2D body) {
 		within_access_range = false;
+		_doorSprite.Animation = "door_close";
 	}
 }
