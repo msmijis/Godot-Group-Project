@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4is0drkpeitx"
-path="res://.godot/imported/TX Props.png-eea129d8ed866e37c03c49743b11e10e.ctex"
+uid="uid://cbs1uejv7obf3"
+path="res://.godot/imported/door_open.png-c4e87a72620978bb79fec0850ab38e13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/TX Props.png"
-dest_files=["res://.godot/imported/TX Props.png-eea129d8ed866e37c03c49743b11e10e.ctex"]
+source_file="res://assets/sprites/door_open.png"
+dest_files=["res://.godot/imported/door_open.png-c4e87a72620978bb79fec0850ab38e13.ctex"]
 
 [params]
 

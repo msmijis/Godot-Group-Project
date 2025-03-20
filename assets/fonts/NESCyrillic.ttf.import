@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bpvuw844p36ff"
-path="res://.godot/imported/BitPotion.ttf-716e5cfc63de395e6c77fa4142ab52ca.fontdata"
+uid="uid://dgb2y10hcf3yb"
+path="res://.godot/imported/NESCyrillic.ttf-8c20e5be5345377a34a457d856fadb07.fontdata"
 
 [deps]
 
-source_file="res://sprites/BitPotion.ttf"
-dest_files=["res://.godot/imported/BitPotion.ttf-716e5cfc63de395e6c77fa4142ab52ca.fontdata"]
+source_file="res://assets/fonts/NESCyrillic.ttf"
+dest_files=["res://.godot/imported/NESCyrillic.ttf-8c20e5be5345377a34a457d856fadb07.fontdata"]
 
 [params]
 
