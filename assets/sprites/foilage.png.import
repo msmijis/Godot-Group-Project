@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1g7ibap2kpen"
-path="res://.godot/imported/bladee.png-126e776db9a640b86436c59a55a81b91.ctex"
+uid="uid://n40t0ye3w11h"
+path="res://.godot/imported/foilage.png-27e2930149b52623e4dc45984bab643d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bladee.png"
-dest_files=["res://.godot/imported/bladee.png-126e776db9a640b86436c59a55a81b91.ctex"]
+source_file="res://assets/sprites/foilage.png"
+dest_files=["res://.godot/imported/foilage.png-27e2930149b52623e4dc45984bab643d.ctex"]
 
 [params]
 
