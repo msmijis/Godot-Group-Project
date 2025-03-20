@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=4 uid="uid://dni38kilyxrji"]
 
-[ext_resource type="Texture2D" uid="uid://c32gx8itkiymg" path="res://sprites/TX Tileset Grass.png" id="1_tjjxi"]
-[ext_resource type="PackedScene" uid="uid://bmbqie0rbyjy0" path="res://scenes/player.tscn" id="2_kiokp"]
+[ext_resource type="Texture2D" uid="uid://c32gx8itkiymg" path="res://assets/sprites/TX Tileset Grass.png" id="1_tjjxi"]
+[ext_resource type="PackedScene" uid="uid://bmbqie0rbyjy0" path="res://player/player.tscn" id="2_kiokp"]
 [ext_resource type="PackedScene" uid="uid://b2460v3p17rfj" path="res://scenes/door.tscn" id="3_2diqr"]
-[ext_resource type="Texture2D" uid="uid://4is0drkpeitx" path="res://sprites/TX Props.png" id="4_axyqp"]
+[ext_resource type="Texture2D" uid="uid://4is0drkpeitx" path="res://assets/sprites/TX Props.png" id="4_axyqp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kiokp"]
 texture = ExtResource("1_tjjxi")
@@ -627,7 +627,6 @@ texture = ExtResource("4_axyqp")
 sources/0 = SubResource("TileSetAtlasSource_3m0gu")
 
 [node name="World2" type="Node2D"]
-position = Vector2(-153, -60)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-160, -100)

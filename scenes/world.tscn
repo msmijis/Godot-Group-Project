@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=4 uid="uid://blt6j4un8rpu4"]
 
 [ext_resource type="Script" uid="uid://dj5uweti1j2iy" path="res://scenes/World.cs" id="1_71j4m"]
-[ext_resource type="Texture2D" uid="uid://n40t0ye3w11h" path="res://sprites/foilage.png" id="1_k0juu"]
-[ext_resource type="PackedScene" uid="uid://bmbqie0rbyjy0" path="res://scenes/player.tscn" id="2_71j4m"]
+[ext_resource type="Texture2D" uid="uid://n40t0ye3w11h" path="res://assets/sprites/foilage.png" id="1_k0juu"]
+[ext_resource type="PackedScene" uid="uid://bmbqie0rbyjy0" path="res://player/player.tscn" id="2_71j4m"]
 [ext_resource type="PackedScene" uid="uid://b2460v3p17rfj" path="res://scenes/door.tscn" id="4_k0juu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
