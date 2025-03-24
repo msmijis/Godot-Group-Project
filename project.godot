@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="minigame"
-run/main_scene="uid://blt6j4un8rpu4"
+run/main_scene="uid://6oq455qclaab"
 config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
 
 [display]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://8ys4wppjc88"]
+
+[ext_resource type="Script" uid="uid://b3mb5y2pythur" path="res://Bg.cs" id="1_7r6q2"]
+[ext_resource type="Texture2D" uid="uid://8ko047lf1hif" path="res://assets/sprites/BG.png" id="1_vcwcu"]
+[ext_resource type="Texture2D" uid="uid://dgkwv3yw740wu" path="res://assets/sprites/water.png" id="2_7r6q2"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_7r6q2")
+scrollingSpeed = 75.0
+
+[node name="BG" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Bg" type="Sprite2D" parent="BG"]
+position = Vector2(160, 100)
+scale = Vector2(1.06667, 1)
+texture = ExtResource("1_vcwcu")
+
+[node name="Water" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(320, 0)
+
+[node name="Water" type="Sprite2D" parent="Water"]
+position = Vector2(160.505, 146)
+scale = Vector2(1.06997, 0.534266)
+texture = ExtResource("2_7r6q2")
