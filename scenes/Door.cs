@@ -36,6 +36,8 @@ public partial class Door : Node2D
     private async void Timer() {
         // Create a timer and wait for the timeout signal asynchronously
         await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
+		ColorRect Rect = GetNode<ColorRect>("SceneTransition/ColorRect");
+		Rect.Color = new Color();
 		EnterDoor(currentScene);
 		SceneTransition.Play("fade_out");
 
