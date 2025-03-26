@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://6oq455qclaab"]
 
-[ext_resource type="Script" uid="uid://cfvom4ar22dgs" path="res://scenes/TitleScreen.cs" id="1_sa3yf"]
+[ext_resource type="Script" uid="uid://cfvom4ar22dgs" path="res://scenes/mainmenu/TitleScreen.cs" id="1_sa3yf"]
 [ext_resource type="Texture2D" uid="uid://cbs1uejv7obf3" path="res://assets/sprites/door_open.png" id="2_mgrm8"]
-[ext_resource type="PackedScene" uid="uid://8ys4wppjc88" path="res://BG.tscn" id="2_sa3yf"]
+[ext_resource type="PackedScene" uid="uid://8ys4wppjc88" path="res://scenes/mainmenu/BG.tscn" id="2_sa3yf"]
 [ext_resource type="Texture2D" uid="uid://lbgcu7pga3wb" path="res://assets/sprites/door_closed.png" id="3_dc4i4"]
 
 [node name="title_screen" type="Node2D"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://8ys4wppjc88"]
 
-[ext_resource type="Script" uid="uid://b3mb5y2pythur" path="res://Bg.cs" id="1_7r6q2"]
+[ext_resource type="Script" uid="uid://b3mb5y2pythur" path="res://scenes/mainmenu/Bg.cs" id="1_7r6q2"]
 [ext_resource type="Texture2D" uid="uid://8ko047lf1hif" path="res://assets/sprites/BG.png" id="1_vcwcu"]
 [ext_resource type="Texture2D" uid="uid://dgkwv3yw740wu" path="res://assets/sprites/water.png" id="2_7r6q2"]
 

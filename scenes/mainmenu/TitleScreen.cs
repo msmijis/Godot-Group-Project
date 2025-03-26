@@ -5,7 +5,7 @@ public partial class TitleScreen : Node2D
 {
 	private void _on_play_pressed()
 	{
-		GetTree().ChangeSceneToFile("res://scenes/world.tscn");
+		GetTree().ChangeSceneToFile("res://scenes/levels/world.tscn");
 	}
 
 	private void _on_quit_pressed()

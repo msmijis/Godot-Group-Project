@@ -35,9 +35,11 @@ public partial class Door : Node2D
 
     private async void Timer() {
         // Create a timer and wait for the timeout signal asynchronously
-        await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
+        await ToSignal(GetTree().CreateTimer(0.5), "timeout");
+
 		ColorRect Rect = GetNode<ColorRect>("SceneTransition/ColorRect");
-		Rect.Color = new Color();
+		Rect.Color = new Color(0, 0, 0, 1);
+
 		EnterDoor(currentScene);
 		SceneTransition.Play("fade_out");
 
@@ -45,9 +47,9 @@ public partial class Door : Node2D
 	
 	private void EnterDoor(Node currentScene) {
 		if (currentScene.Name == "World2") {
-			GetTree().ChangeSceneToFile("res://scenes/world.tscn");
+			GetTree().ChangeSceneToFile("res://scenes/levels/world.tscn");
 		} else {
-			GetTree().ChangeSceneToFile("res://scenes/world_2.tscn");
+			GetTree().ChangeSceneToFile("res://scenes/levels/world_2.tscn");
 		}
 	}
 	

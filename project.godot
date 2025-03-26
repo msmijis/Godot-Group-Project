@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="minigame"
+config/name="Hero On Hold"
+config/description="MSMIJIS"
 run/main_scene="uid://6oq455qclaab"
 config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
 
