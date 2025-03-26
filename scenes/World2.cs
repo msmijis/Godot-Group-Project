@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class World : Node2D
+public partial class World2 : Node2D
 {
     private AnimationPlayer sceneTransition;
     private ColorRect colorRect;

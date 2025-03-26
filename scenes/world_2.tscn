@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://dni38kilyxrji"]
+[gd_scene load_steps=11 format=4 uid="uid://dni38kilyxrji"]
 
+[ext_resource type="Script" uid="uid://oobfpolesih0" path="res://scenes/World2.cs" id="1_o7h1l"]
 [ext_resource type="Texture2D" uid="uid://c32gx8itkiymg" path="res://assets/sprites/TX Tileset Grass.png" id="1_tjjxi"]
 [ext_resource type="PackedScene" uid="uid://bmbqie0rbyjy0" path="res://player/player.tscn" id="2_kiokp"]
 [ext_resource type="PackedScene" uid="uid://b2460v3p17rfj" path="res://scenes/door.tscn" id="3_2diqr"]
 [ext_resource type="Texture2D" uid="uid://4is0drkpeitx" path="res://assets/sprites/TX Props.png" id="4_axyqp"]
+[ext_resource type="PackedScene" uid="uid://clhj7ajs76oeu" path="res://scenes/scene_transition.tscn" id="6_rwd0d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kiokp"]
 texture = ExtResource("1_tjjxi")
@@ -627,6 +629,7 @@ texture = ExtResource("4_axyqp")
 sources/0 = SubResource("TileSetAtlasSource_3m0gu")
 
 [node name="World2" type="Node2D"]
+script = ExtResource("1_o7h1l")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-160, -100)
@@ -644,3 +647,5 @@ position = Vector2(0, -32)
 position = Vector2(-160, -100)
 tile_map_data = PackedByteArray("AAADAAQAAAAeAAUAAAACAAUAAAARAAYAAAANAAcAAAAOAAsAAAANAAgAAAAOAAwAAAANAAkAAAAOAA0AAAAOAAcAAAAPAAsAAAAOAAgAAAAPAAwAAAAOAAkAAAAPAA0AAAAPAAgAAAAQAAwAAAAPAAkAAAAQAA0AAAAQAAgAAAARAAwAAAAQAAkAAAARAA0AAAAEAAgAAAASAA8AAAAEAAkAAAASABAAAAAEAAoAAAASABEAAAAFAAgAAAATAA8AAAAFAAkAAAATABAAAAAFAAoAAAATABEAAAAGAAkAAAAUABAAAAAGAAoAAAAUABEAAAAHAAkAAAAVABAAAAAHAAoAAAAVABEAAAD+/wEAAAAbAAQAAAD+/wIAAAAbAAUAAAD///7/AAAcAAEAAAD/////AAAcAAIAAAD//wAAAAAcAAMAAAD//wEAAAAcAAQAAAD//wIAAAAcAAUAAAAAAP7/AAAdAAEAAAAAAP//AAAdAAIAAAAAAAAAAAAdAAMAAAAAAAEAAAAdAAQAAAAAAAIAAAAdAAUAAAABAAEAAAAeAAQAAAABAAIAAAAeAAUAAAD//wMAAAAQAAYAAAD//wQAAAAQAAcAAAD//wUAAAAQAAgAAAD//wYAAAAQAAkAAAAAAAMAAAARAAYAAAAAAAQAAAARAAcAAAAAAAUAAAARAAgAAAAAAAYAAAARAAkAAAAUAAAAAAAYAAAAAAAUAAEAAAAYAAEAAAAUAAIAAAAYAAIAAAAUAAMAAAAYAAMAAAAVAAAAAAAZAAAAAAAVAAEAAAAZAAEAAAAVAAIAAAAZAAIAAAAVAAMAAAAZAAMAAAAVAAgAAAAOABIAAAAVAAkAAAAOABMAAAAVAAoAAAAOABQAAAAVAAsAAAAOABUAAAAWAAgAAAAPABIAAAAWAAkAAAAPABMAAAAWAAoAAAAPABQAAAAWAAsAAAAPABUAAAD9/woAAAAaABYAAAD9/wsAAAAaABcAAAD9/wwAAAAaABgAAAD9/w0AAAAaABkAAAD+/woAAAAbABYAAAD+/wsAAAAbABcAAAD+/wwAAAAbABgAAAD+/w0AAAAbABkAAAD//woAAAAcABYAAAD//wsAAAAcABcAAAD//wwAAAAcABgAAAD//w0AAAAcABkAAAAAAAoAAAAdABYAAAAAAAsAAAAdABcAAAAAAAwAAAAdABgAAAAAAA0AAAAdABkAAAANAP7/AAAOAB4AAAANAP//AAAOAB8AAAAOAP7/AAAPAB4AAAAOAP//AAAPAB8AAAAPAP7/AAAQAB4AAAAPAP//AAAQAB8AAAAQAP7/AAARAB4AAAAQAP//AAARAB8AAAA=")
 tile_set = SubResource("TileSet_o7h1l")
+
+[node name="SceneTransition" parent="." instance=ExtResource("6_rwd0d")]

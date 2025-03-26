@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://c0fn70pwp8vco"]
 
-[ext_resource type="Texture2D" uid="uid://1g7ibap2kpen" path="res://sprites/bladee.png" id="1_qb25o"]
+[ext_resource type="Texture2D" uid="uid://1g7ibap2kpen" path="res://assets/sprites/bladee.png" id="1_qb25o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g1dw6"]
 atlas = ExtResource("1_qb25o")
@@ -140,3 +140,4 @@ animations = [{
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_gbfbk")
 animation = &"walk_down"
+frame_progress = 0.970437
