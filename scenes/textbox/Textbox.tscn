@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://blfy4ybxam2xe"]
+[gd_scene load_steps=7 format=3 uid="uid://blfy4ybxam2xe"]
 
 [ext_resource type="Script" uid="uid://dnjx47p77cex" path="res://scenes/textbox/Textbox.cs" id="1_hkkga"]
 [ext_resource type="FontFile" uid="uid://dgb2y10hcf3yb" path="res://assets/fonts/NESCyrillic.ttf" id="2_k631v"]
+[ext_resource type="AudioStream" uid="uid://b2efqqgmhu07i" path="res://assets/sounds/human-voice01.wav" id="3_l5dec"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drl3u"]
 bg_color = Color(0, 0, 0, 1)
@@ -11,21 +12,29 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(1, 1, 1, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_0wchn"]
+font = ExtResource("2_k631v")
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_l5dec"]
+font = ExtResource("2_k631v")
+font_size = 10
+
 [node name="Textbox" type="CanvasLayer"]
 script = ExtResource("1_hkkga")
 
 [node name="TextboxContainer" type="MarginContainer" parent="."]
-anchors_preset = 12
-anchor_top = 1.0
+anchors_preset = -1
+anchor_top = 0.733
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -64.0
+offset_top = 0.0599976
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = -16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = -24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
 
 [node name="Panel" type="Panel" parent="TextboxContainer"]
 layout_mode = 2
@@ -49,10 +58,18 @@ layout_mode = 2
 size_flags_vertical = 0
 theme_override_fonts/font = ExtResource("2_k631v")
 text = "*"
+label_settings = SubResource("LabelSettings_0wchn")
 
 [node name="Label" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 0
-theme_override_fonts/font = ExtResource("2_k631v")
-text = "hello there"
+size_flags_vertical = 1
+text = "HELLO WORLD."
+label_settings = SubResource("LabelSettings_l5dec")
+autowrap_mode = 3
+clip_text = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_l5dec")
+pitch_scale = 0.8
+playback_type = 1
