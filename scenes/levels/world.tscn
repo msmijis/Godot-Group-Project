@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dj5uweti1j2iy" path="res://scenes/levels/World.cs" id="1_71j4m"]
 [ext_resource type="Texture2D" uid="uid://n40t0ye3w11h" path="res://assets/sprites/foilage.png" id="1_k0juu"]
-[ext_resource type="PackedScene" uid="uid://bmbqie0rbyjy0" path="res://player/player.tscn" id="2_71j4m"]
+[ext_resource type="PackedScene" uid="uid://bmbqie0rbyjy0" path="res://scenes/player/player.tscn" id="2_71j4m"]
 [ext_resource type="PackedScene" uid="uid://b2460v3p17rfj" path="res://scenes/door/door.tscn" id="4_k0juu"]
 [ext_resource type="PackedScene" uid="uid://clhj7ajs76oeu" path="res://scenes/scenetransition/scene_transition.tscn" id="5_71j4m"]
 
